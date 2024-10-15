@@ -1,0 +1,225 @@
+@import 'variables';
+
+* {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  &:hover{
+    color: inherit;
+  }
+}
+
+.topofpage1 {
+  background-image: url(../images/bannerbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+  .topbanner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .topbannericon {
+    background-image: url(../icons/vellvytop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 40px; }
+    .righttopbanner {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: baseline;
+      gap: 20px;
+      h3 {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      button {
+        background-color: #E84A5F;
+        border: 0;
+        padding: 9px 12px;
+        border-radius: 6px;
+        width: 160px;
+        height: 36px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: white;
+        text-align: center;
+      }
+    }
+  }
+  .content {
+
+    p{
+      font-family: 'Caveat', cursive;
+      font-weight: 700;
+      font-size: var(--title-size);
+      color: #E84A5F;
+      line-height: 42px;
+      max-width: 600px;
+    }
+    button {
+      background-color: #5D6781;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      border-radius: 6px;
+      box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.06);
+      border: 0 solid black;
+      padding: 8px 20px;
+      color: white;
+      margin-top: 18px;
+      &:hover {
+        cursor: pointer;
+        background-color: #65667a;
+        transition-duration: 0.2s;
+      }
+    }
+  }
+  h1 {
+    font-weight: 700;
+    font-size: 51px;
+  }
+}
+
+.topofpage2 {
+  width: 100%;
+  background-color: #C0B6FF;
+  .bottomcontent {
+  img{
+    width: 200px;
+    height: 100px;
+  }
+  button{
+    background-color: black;
+    color: white;
+    border: 0px;
+    width: 158px;
+    height: 49px;
+    font-weight: 400;
+    font-size: 16px;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  .centerwriting {
+    text-align: center;
+    padding: 2px;
+    p{
+      font-weight: 300;
+      line-height: 45px;
+      font-size:  var(--title-size);
+    }
+    h1{
+      font-weight: 400;
+      line-height: 45px;
+      font-size:  var(--title-size);
+    }
+  }
+  }
+}
+
+.meuilleurssalons {
+  .cardrabat, .cardcasa, .cardrabat2 {
+    width: 380px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px -7px #888888;
+    img {
+      border-radius: 10px 10px 0px 0px;
+    }
+    h2{
+      font-weight: 600;
+      font-size: 18px;
+    }
+    .card-body {
+      .iconspan {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        p {
+          position: absolute;
+          left: 25px;
+          top: 8px;
+          color: #B7B7B7;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 20px;
+        }
+      }
+    }
+    a{
+      background-color: #5D6781;
+      color: white;
+      font-weight: 400;
+      font-size: 16px;
+      padding: 8px 47.75px 9px 48px;
+      border-radius: 6px;
+    }
+  }
+}
+
+.contactsection {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  flex-direction: row;
+  justify-content: space-around;
+  .leftcontact {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -7px #888888;
+    padding: 5vh;
+    .contactform {
+      h1 {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 26px;
+      }
+        hr {  
+        color: #888888;
+      }
+      .bottomform {
+        margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 35px;
+      .inputs {
+        input {
+          background-color: #F7F7F7;
+          border-radius: 20px;
+          padding: 10px 100px 10px 15px;
+          border: 0px;
+        }
+      }
+      .text-input {
+        border: 0px;
+        background-color: #F7F7F7;
+        border-radius: 20px;
+        height: 140px;
+        resize: none;
+        padding: 15px;
+      }
+      button {
+        background-color: #E84A5F;
+        color: white;
+        border: 0px;
+        border-radius: 22px;
+        width: 192.48px;
+        height: 43.5px;
+      }
+    }
+  }
+}
+}

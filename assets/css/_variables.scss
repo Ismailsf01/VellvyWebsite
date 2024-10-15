@@ -1,0 +1,16 @@
+:root {
+    --title-size:45px;
+}
+
+
+@media screen and (max-width:991px) {
+    :root {
+        --title-size:35px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    :root {
+        --title-size:28px;
+    }
+}

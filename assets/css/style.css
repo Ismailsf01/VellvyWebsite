@@ -1,0 +1,225 @@
+:root {
+  --title-size:45px;
+}
+
+@media screen and (max-width: 991px) {
+  :root {
+    --title-size:35px;
+  }
+}
+@media screen and (max-width: 767px) {
+  :root {
+    --title-size:28px;
+  }
+}
+* {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: inherit;
+}
+
+.topofpage1 {
+  background-image: url(../images/bannerbg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 400px;
+}
+.topofpage1 .topbanner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.topofpage1 .topbanner .topbannericon {
+  background-image: url(../icons/vellvytop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 40px;
+}
+.topofpage1 .topbanner .righttopbanner {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 20px;
+}
+.topofpage1 .topbanner .righttopbanner h3 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.topofpage1 .topbanner .righttopbanner button {
+  background-color: #E84A5F;
+  border: 0;
+  padding: 9px 12px;
+  border-radius: 6px;
+  width: 160px;
+  height: 36px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: white;
+  text-align: center;
+}
+.topofpage1 .content p {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-size: var(--title-size);
+  color: #E84A5F;
+  line-height: 42px;
+  max-width: 600px;
+}
+.topofpage1 .content button {
+  background-color: #5D6781;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 16px 4px rgba(0, 0, 0, 0.06);
+  border: 0 solid black;
+  padding: 8px 20px;
+  color: white;
+  margin-top: 18px;
+}
+.topofpage1 .content button:hover {
+  cursor: pointer;
+  background-color: #65667a;
+  transition-duration: 0.2s;
+}
+.topofpage1 h1 {
+  font-weight: 700;
+  font-size: 51px;
+}
+
+.topofpage2 {
+  width: 100%;
+  background-color: #C0B6FF;
+}
+.topofpage2 .bottomcontent img {
+  width: 200px;
+  height: 100px;
+}
+.topofpage2 .bottomcontent button {
+  background-color: black;
+  color: white;
+  border: 0px;
+  width: 158px;
+  height: 49px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.topofpage2 .bottomcontent button:hover {
+  cursor: pointer;
+}
+.topofpage2 .bottomcontent .centerwriting {
+  text-align: center;
+  padding: 2px;
+}
+.topofpage2 .bottomcontent .centerwriting p {
+  font-weight: 300;
+  line-height: 45px;
+  font-size: var(--title-size);
+}
+.topofpage2 .bottomcontent .centerwriting h1 {
+  font-weight: 400;
+  line-height: 45px;
+  font-size: var(--title-size);
+}
+
+.meuilleurssalons .cardrabat, .meuilleurssalons .cardcasa, .meuilleurssalons .cardrabat2 {
+  width: 380px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px -7px #888888;
+}
+.meuilleurssalons .cardrabat img, .meuilleurssalons .cardcasa img, .meuilleurssalons .cardrabat2 img {
+  border-radius: 10px 10px 0px 0px;
+}
+.meuilleurssalons .cardrabat h2, .meuilleurssalons .cardcasa h2, .meuilleurssalons .cardrabat2 h2 {
+  font-weight: 600;
+  font-size: 18px;
+}
+.meuilleurssalons .cardrabat .card-body .iconspan, .meuilleurssalons .cardcasa .card-body .iconspan, .meuilleurssalons .cardrabat2 .card-body .iconspan {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.meuilleurssalons .cardrabat .card-body .iconspan p, .meuilleurssalons .cardcasa .card-body .iconspan p, .meuilleurssalons .cardrabat2 .card-body .iconspan p {
+  position: absolute;
+  left: 25px;
+  top: 8px;
+  color: #B7B7B7;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+}
+.meuilleurssalons .cardrabat a, .meuilleurssalons .cardcasa a, .meuilleurssalons .cardrabat2 a {
+  background-color: #5D6781;
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 8px 47.75px 9px 48px;
+  border-radius: 6px;
+}
+
+.contactsection {
+  margin-top: 20vh;
+  margin-bottom: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  height: 70vh;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.contactsection .leftcontact {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px -7px #888888;
+  padding: 5vh;
+}
+.contactsection .leftcontact .contactform h1 {
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 26px;
+}
+.contactsection .leftcontact .contactform hr {
+  color: #888888;
+}
+.contactsection .leftcontact .contactform .bottomform {
+  margin-top: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 35px;
+}
+.contactsection .leftcontact .contactform .bottomform .inputs input {
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  padding: 10px 100px 10px 15px;
+  border: 0px;
+}
+.contactsection .leftcontact .contactform .bottomform .text-input {
+  border: 0px;
+  background-color: #F7F7F7;
+  border-radius: 20px;
+  height: 140px;
+  resize: none;
+  padding: 15px;
+}
+.contactsection .leftcontact .contactform .bottomform button {
+  background-color: #E84A5F;
+  color: white;
+  border: 0px;
+  border-radius: 22px;
+  width: 192.48px;
+  height: 43.5px;
+}/*# sourceMappingURL=style.css.map */
